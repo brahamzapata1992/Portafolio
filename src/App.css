@@ -1,7 +1,6 @@
 .FondoPrinciaplApp {
     width: 100%;
-    height: 100vh;
-    
+    height: 100vh;    
   }
   
   .ComponentePrincipalBackgroundDark {
@@ -20,4 +19,106 @@
   .ComponenteRouteBackground {
     background: white;
     color: black;
+  }
+  .icon-white {
+    color: white;    
+  }
+  .round-button-home {    
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cbc9c9;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  .round-button-home:hover {
+    background-color: rgb(253, 163, 16);
+  }
+  
+  .round-button-home svg {
+    color: white;
+    width: 40px;
+    height: 40px;
+  }
+  .round-button-about {    
+    position: absolute;
+    right: 2%;
+    top: 28%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cbc9c9;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  .round-button-about:hover {
+    background-color: rgb(253, 163, 16);
+  }
+  
+  .round-button-about svg {
+    color: white;
+    width: 40px;
+    height: 40px;
+  }
+  .round-button-portfolio {    
+    position: absolute;
+    right: 2%;
+    top: 36%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cbc9c9;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  .round-button-portfolio:hover {
+    background-color: rgb(253, 163, 16);
+  }  
+  .round-button-portfolio svg {
+    color: white;
+    width: 40px;
+    height: 40px;
+  }
+  .round-button-contact {    
+    position: absolute;
+    right: 2%;
+    top: 44%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cbc9c9;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  .round-button-contact:hover {
+    background-color: rgb(253, 163, 16);
+  }
+  
+  .round-button-contact svg {
+    color: white;
+    width: 40px;
+    height: 40px;
   }

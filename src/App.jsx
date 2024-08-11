@@ -6,6 +6,12 @@ import Button from './utilities/Button';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Portfolio from './Components/Portfolio/Portfolio';
+import { CiDark } from 'react-icons/ci';
+import { GoSun } from 'react-icons/go';
+import { IoHomeSharp } from "react-icons/io5";
+import { FaUserAlt } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function App() {
   const [isLuminoso, setIsLuminoso] = useState(false);
@@ -13,34 +19,22 @@ function App() {
 
   const handleClick = () => {
     setIsLuminoso(!isLuminoso);
-    console.log('cambio el estado');
-  };
-
-  const iconButton = () => {
-    return isLuminoso ? 'encender luz' : 'apagar luz';
   };
 
   const nombreClaseBackground = isLuminoso ? 'ComponentePrincipalBackgroundDark' : 'ComponentePrincipalBackgroundLigth';
-  const nombreClaseAbout = location.pathname === '/About' 
-    ? (isLuminoso ? 'ComponenteRouteBackgroundWhite' : 'ComponenteRouteBackground') 
+  const nombreClaseRoute = location.pathname === '/About' || location.pathname === '/Portfolio' || location.pathname === '/Contact'
+    ? (isLuminoso ? 'ComponenteRouteBackgroundWhite' : 'ComponenteRouteBackground')
     : '';
-  const nombreClasePortfolio = location.pathname === '/Portfolio' 
-    ? (isLuminoso ? 'ComponenteRouteBackgroundWhite' : 'ComponenteRouteBackground') 
-    : '';
-  const nombreClaseContact = location.pathname === '/Portfolio' 
-    ? (isLuminoso ? 'ComponenteRouteBackgroundWhite' : 'ComponenteRouteBackground') 
-    : '';
-  
 
   return (
-    <div className={`FondoPrinciaplApp ${nombreClaseBackground} ${nombreClaseAbout} ${nombreClasePortfolio} ${nombreClaseContact}`}>
+    <div className={`FondoPrinciaplApp ${nombreClaseBackground} ${nombreClaseRoute}`}>
       <Button onClick={handleClick}>
-        {iconButton()}
+        {isLuminoso ? <GoSun className="icon-white"/> : <CiDark  />}
       </Button>
-      <button><Link to='/'>Home</Link></button>
-      <button><Link to='/About'>About</Link></button>
-      <button><Link to='/Portfolio'>Portfolio</Link></button>
-      <button><Link to='/Contact'>Contact</Link></button>
+      <button className="round-button-home"><Link to='/'><IoHomeSharp /></Link></button>
+      <button className="round-button-about"><Link to='/About'><FaUserAlt /></Link></button>
+      <button className="round-button-portfolio"><Link to='/Portfolio'><FaBriefcase /></Link></button>
+      <button className="round-button-contact"><Link to='/Contact'><MdEmail /></Link></button>
       
       <Routes>
         <Route path="/" element={<Home />} />
