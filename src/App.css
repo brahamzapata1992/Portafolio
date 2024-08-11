@@ -1,5 +1,23 @@
-.FondoPrinciaplApp{
-    width: 100vw;
+.FondoPrinciaplApp {
+    width: 100%;
     height: 100vh;
-    background: rgb(61, 61, 61);
-}
+    
+  }
+  
+  .ComponentePrincipalBackgroundDark {
+    background: linear-gradient(70deg, rgb(253, 163, 16) 25%, rgb(45, 45, 45) 25%);
+    color: white;
+  }
+  
+  .ComponentePrincipalBackgroundLigth {
+    background: linear-gradient(70deg, rgb(253, 163, 16) 25%, rgb(248, 248, 248) 25%);
+    color: black;
+  }
+  .ComponenteRouteBackgroundWhite {
+    background: rgb(45, 45, 45);
+    color: white;
+  }
+  .ComponenteRouteBackground {
+    background: white;
+    color: black;
+  }

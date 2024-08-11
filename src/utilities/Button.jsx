@@ -1,19 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react';
 
-const Button = () => {
+const Button = ({ onClick, children }) => {
+  return (
+    <button onClick={onClick}>
+      {children}
+    </button>
+  );
+};
 
-    const [isLuminoso, setIsLuminoso] = useState(false)
-
-    const handleClick = () =>{
-        setIsLuminoso(!isLuminoso)
-        console.log('cambio el estado')
-    }
-  
-    return (
-    <div>
-        <button onClick={handleClick}>Click me!</button>
-    </div>
-  )
-}
-
-export default Button
+export default Button;
