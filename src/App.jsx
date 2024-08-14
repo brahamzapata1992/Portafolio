@@ -31,18 +31,21 @@ function App() {
       <Button onClick={handleClick}>
         {isLuminoso ? <GoSun className="icon-white"/> : <CiDark  />}
       </Button>
-      <button className={isLuminoso ? 'round-button-home' : 'round-button-home-light'}>
+      <div className='menu-principal-page'>
+        <button className={isLuminoso ? 'round-button-home' : 'round-button-home-light'}>
         <Link to='/'><IoHomeSharp /></Link>
-      </button>
-      <button className={isLuminoso ? 'round-button-about' : 'round-button-about-ligth'}>
+        </button>
+        <button className={isLuminoso ? 'round-button-home' : 'round-button-home-light'}>
         <Link to='/About'><FaUserAlt /></Link>
-      </button>
-      <button className={isLuminoso ? 'round-button-portfolio' : 'round-button-portfolio-ligth'}>
+        </button>
+        <button className={isLuminoso ? 'round-button-home' : 'round-button-home-light'}>
         <Link to='/Portfolio'><FaBriefcase /></Link>
-      </button>
-      <button className={isLuminoso ? 'round-button-contact' : 'round-button-contact-ligth'}>
+        </button>
+        <button className={isLuminoso ? 'round-button-home' : 'round-button-home-light'}>
         <Link to='/Contact'><MdEmail /></Link>
-      </button>
+        </button>
+      </div>
+      
       
       <Routes>
         <Route path="/" element={<Home />} />

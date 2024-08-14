@@ -1,0 +1,38 @@
+.home-page-principal{    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.foto-perfil-img{
+    width: 65%;     
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.contenedor-imagen{    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;    
+}
+.contenedor-texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;       
+}
+.titulo-home-name{
+    font-size: 60px;
+    color: rgb(253, 163, 16);
+}
+.titulo-home-info{
+    font-size: 60px;
+    color: white;
+    margin-left: 35px;
+}
+.texto-home-description{
+    font-size: 24px;
+    margin-left: 38px;
+    width: 70%;
+}
+
