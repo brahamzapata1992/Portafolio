@@ -43,7 +43,7 @@ const experienceData = [
     year: '2010 - 2016',
     title: 'Mechanical Engineer.',
     company: 'U. Libre de Colombia',
-    description: 'Durante mi formación en Ingeniería Mecánica, desarrollé habilidades en diseño, mantenimiento y automatización de sistemas, con un enfoque en la sostenibilidad. Aprendí a aplicar conocimientos científicos y tecnológicos para resolver problemas industriales y contribuir a la innovación, trabajando eficazmente en equipo y adaptándome a un entorno globalizado y cambiante.',
+    description: 'During my studies in Mechanical Engineering, I developed skills in designing, maintaining, and automating systems with a focus on sustainability. I learned to apply scientific and technological knowledge to solve industrial problems and contribute to innovation while effectively collaborating in diverse teams and adapting to a globalized and ever-changing environment.',
     icon: <FaGraduationCap />,
   },
 ];
