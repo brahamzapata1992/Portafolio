@@ -4,27 +4,27 @@ html, body {
 }
 
 #root {
-  min-height: 100vh; /* Asegura que el contenedor principal ocupe toda la altura */
-  position: relative; /* Necesario para un layout relativo */
-  padding-bottom: 60px; /* Deja espacio para el footer (altura del footer) */
+  min-height: 100vh; 
+  position: relative;
+  padding-bottom: 60px;
 }
 
 .content {
-  flex: 1; /* Ocupa el espacio disponible */
+  flex: 1; 
 }
 
-/* Footer fijo */
+
 .footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  position: fixed; /* Fija el footer en la parte inferior */
+  position: fixed; 
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px; /* Ajusta la altura del footer */
-  z-index: 1000; /* Asegura que el footer esté sobre el contenido */
+  height: 40px; 
+  z-index: 1000; 
 }
 
 .nav-icons {
@@ -37,18 +37,24 @@ html, body {
   text-decoration: none;
   font-size: 24px;
   padding: 10px;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #555;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.4s ease;
 }
 
-/* Media Query para pantallas más grandes */
+.nav-icons a:hover {
+  background-color: #FDA310; /* Color de fondo al pasar el mouse */
+}
+
+
 @media (min-width: 768px) {
   .nav-icons a {
     font-size: 30px;
-  }
+  }  
 }
+
