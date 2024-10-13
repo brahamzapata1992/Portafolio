@@ -34,8 +34,8 @@ const Skills = () => {
               text={`${item.percentage}%`}
               styles={buildStyles({
                 pathColor: `#FDA310`,
-                textColor: '#000',
                 textColor: darkMode ? '#FFF' : '#000',
+                trailColor: '#e0e0e0',
               })}
             />
           </div>
