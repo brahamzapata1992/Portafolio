@@ -1,6 +1,7 @@
 import React from 'react'
 import perfil from '../assets/perfil.JPG'
 import { useTheme } from '../context/ThemeContext';
+import Button from '../components/Button';
 import './About.css'
 
 const About = () => {
@@ -29,6 +30,9 @@ const About = () => {
         <div class="info-item"><strong className='item_about'>Email:</strong> <span>brahamzapata1992@gmail.com</span></div>
         <div class="info-item"><strong className='item_about'>Linkedin:</strong> <span>Braham D. Zapata</span></div>
         <div class="info-item"><strong className='item_about'>Languages:</strong> <span>Spanish, English</span></div>
+      </div>
+      <div className="button_about">
+      <Button text="DOWNLOAD CV"   />
       </div>
     </div>
   )

@@ -99,7 +99,13 @@
   }
 
   .profile-photo_about {
-      width: 180px; 
-      height: 180px; 
+      width: 200px; 
+      height: 200px; 
+  }
+  .button_about{
+    margin-top: 7%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;    
   }
 }
