@@ -114,4 +114,12 @@
     color: #676665;
     margin-bottom: 10%;
   }
+  .title_about_experience{
+    color: #676665;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .about_experience_list{
+    margin-bottom: 15%;
+  }
 }

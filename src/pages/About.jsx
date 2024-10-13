@@ -3,6 +3,7 @@ import perfil from '../assets/perfil.JPG'
 import { useTheme } from '../context/ThemeContext';
 import Button from '../components/Button';
 import Skills from '../components/Skills';
+import Experience from '../components/Experience';
 import './About.css'
 
 const About = () => {
@@ -38,6 +39,10 @@ const About = () => {
       <div>
         <h2 className='skills_about_text'>MY SKILLS</h2>
         <Skills />
+      </div>
+      <div className='about_experience_list'>
+        <h2 className='title_about_experience'> EXPERIENCE & EDUCATION </h2>
+        <Experience />
       </div>
     </div>
   )

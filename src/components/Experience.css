@@ -1,0 +1,64 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .experience-icon {
+    background-color: #FDA310;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;    
+    margin-right: 20px;
+    font-size: 20px;    
+  }
+  
+  .experience-details {
+    background-color: #ffffff00; 
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: justify;
+  }
+  
+  .experience-year {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .experience-title {
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(104, 101, 101);
+  }
+  
+  .experience-company {
+    font-size: 17px;
+    font-weight: normal;
+    color: #FDA310;
+  }
+  
+  .experience-description {
+    font-size: 16px;
+    color: #6d6b6b;
+  }
+  
+  /** moso oscuro */
+
+  .dark-mode .experience-year{
+    color: white;
+  }
+  .dark-mode .experience-title{
+    color: white;
+  }
+  .dark-mode .experience-description{
+    color: white;
+  }
