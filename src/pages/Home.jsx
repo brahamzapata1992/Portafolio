@@ -1,6 +1,7 @@
 import React from 'react';
 import perfil from '../assets/perfil.JPG'
 import { useTheme } from '../context/ThemeContext';
+import Button from '../components/Button';
 import './Home.css'; 
 
 const Home = () => {
@@ -16,7 +17,9 @@ const Home = () => {
         <h1 className='home_nombre'>I'M BRAHAM ZAPATA</h1>
         <h2 className='home_profesion'>WEB DESIGNER</h2>
         <p className='home_texto_presentacion'>I am a developer passionate about creating intuitive web applications that enhance the user experience. I focus on learning and growing professionally, collaborating on projects that make life easier and more productive.</p>
-        <button className="contact-button">Contactar</button>
+        <div className='Button_home_about'>
+          <Button text="MORE ABOUT ME"  />
+        </div>
       </div>     
     </div>
   );
