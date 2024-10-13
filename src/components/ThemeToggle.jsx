@@ -1,27 +1,22 @@
-import { createContext, useState, useContext, useEffect } from 'react';
+import React from 'react';
+import { CiDark } from 'react-icons/ci'; 
+import { GoSun } from 'react-icons/go'; 
+import { useTheme } from '../context/ThemeContext';
+import './ThemeToggle.css';
 
-const ThemeContext = createContext();
-
-export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setDarkMode(prevMode => !prevMode);
-  };
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [darkMode]);
+const ThemeToggle = () => {
+  const { darkMode, toggleTheme } = useTheme();
 
   return (
-    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <button className="theme-toggle" onClick={toggleTheme}>
+      {darkMode ? (
+        <GoSun style={{ color: 'white' }} /> 
+      ) : (
+        <CiDark style={{ color: 'black' }} /> 
+      )}
+    </button>
   );
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export default ThemeToggle;
+
