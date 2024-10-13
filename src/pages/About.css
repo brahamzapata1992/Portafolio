@@ -2,6 +2,9 @@
     margin-top: 15%;
     margin-left: 4%;
 }
+.contenedor_about_principal_text{
+  text-shadow: 10px 10px 4.5px rgba(102, 100, 100, 0.5);  
+}
 .about_text_title{
     color: rgb(100, 99, 99);
    }

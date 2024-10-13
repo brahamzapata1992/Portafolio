@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <div className='principal_contenedor_all'>
-      <div>
+      <div className='contenedor_about_principal_text'>
         <h1 className='about_text_title'>ABOUT <span className='about_letra_me'>ME</span></h1>        
       </div>
       <div>
