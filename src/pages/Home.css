@@ -70,20 +70,20 @@
     }
   
     .profile-photo {
-      width: 500px; /* Ajusta el tamaño de la foto para pantallas grandes */
+      width: 500px; 
       height: auto;
     }    
   
     .home_nombre {
-      font-size: 32px; /* Tamaño de fuente para el nombre */
+      font-size: 32px; 
     }
   
     .home_profesion {
-      font-size: 24px; /* Tamaño de fuente para el título */
+      font-size: 24px; 
     }
   
     .home_texto_presentacion {
-      font-size: 18px; /* Tamaño de fuente para la descripción */
+      font-size: 18px; 
     }    
   }
   
