@@ -17,6 +17,7 @@ const skillsData = [
   { skill: 'Git', percentage: 85 },
   { skill: 'GitHub', percentage: 75 },
   { skill: 'Trello', percentage: 55 },
+  { skill: 'Python', percentage: 40 },
 ];
 
 const Skills = () => {

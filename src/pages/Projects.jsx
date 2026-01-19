@@ -4,8 +4,10 @@ import { useTheme } from "../context/ThemeContext";
 import Card from "../components/Card";
 
 // Imágenes (por ahora las mismas para todas, luego cambias)
-import musicFront from "../assets/projects/music-front.jpg";
+import musicFront from "../assets/projects/music-front.png";
 import musicBack from "../assets/projects/music-back.png";
+import dentalFront from "../assets/projects/consultorio_front.png";
+import dentalBack from "../assets/projects/consultorio_back.png";
 
 const Projects = () => {
   const { darkMode } = useTheme();
@@ -14,24 +16,24 @@ const Projects = () => {
     {
       id: 1,
       title: "Dental Clinic App",
-      badge: "Project",
+      badge: "BackEnd",
       github: "https://github.com/tu-user/dental-clinic",
       live: "https://tu-deploy.com",
       description:
         "A dental clinic management system with patient records and appointment scheduling.",
-      tech: ["Java", "Spring Boot", "SQL"],
-      frontImage: musicFront, // por ahora igual
-      backImage: musicBack,   // por ahora igual
+      tech: ["Java", "SQL", "Spring Boot"],
+      frontImage: dentalFront, 
+      backImage: dentalBack,   
     },
     {
       id: 2,
       title: "Music Rent E-commerce",
-      badge: "E-commerce",
+      badge: "Full Stack",
       github: "https://github.com/tu-user/music-rent",
       live: "",
       description:
         "A music instrument rental e-commerce platform with search, categories, and rental dates.",
-      tech: ["React", "Spring Boot", "SQL"],
+      tech: ["React", "Java", "SQL"],
       frontImage: musicFront,
       backImage: musicBack,
     },
