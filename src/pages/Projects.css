@@ -1,5 +1,14 @@
-@media (max-width: 768px) {
+/* GRID (desktop por defecto) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 190px);
+  justify-content: center;
+  gap: 26px;
+  margin-top: 24px;
+}
 
+/* MOBILE */
+@media (max-width: 768px) {
   .contenedor_projects_principal_text {
     text-shadow: 10px 10px 4.5px rgba(102, 100, 100, 0.5);
   }
@@ -22,12 +31,10 @@
   }
 
   .projects-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centra las cards */
-  gap: 20px;
-  margin-top: 20px;
-}
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra las cards */
+    gap: 20px;
+    margin-top: 20px;
+  }
 }
