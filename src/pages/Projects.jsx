@@ -17,8 +17,8 @@ const Projects = () => {
       id: 1,
       title: "Dental Clinic App",
       badge: "BackEnd",
-      github: "https://github.com/tu-user/dental-clinic",
-      live: "https://tu-deploy.com",
+      github: "https://github.com/brahamzapata1992/Clinica_Odontologica_BackEnd",
+      live: "https://clinicaodontologicabackend-production.up.railway.app/",
       description:
         "A dental clinic management system with patient records and appointment scheduling.",
       tech: ["Java", "SQL", "Spring Boot"],
