@@ -1,9 +1,13 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({ text, onClick, type = "button" }) => {
+const Button = ({ text, onClick, className = "", type = "button" }) => {
   return (
-    <button className="download-button" onClick={onClick} type={type}>
+    <button
+      className={`download-button ${className}`}
+      onClick={onClick}
+      type={type}
+    >
       {text}
     </button>
   );

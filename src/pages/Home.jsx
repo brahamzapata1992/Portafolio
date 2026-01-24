@@ -18,12 +18,23 @@ const Home = () => {
       </div>
       <div>
         <h1 className='home_nombre'>I'M BRAHAM ZAPATA</h1>
-        <h2 className='home_profesion'>SOFTWARE ENGINEER</h2>
+        <h2 className="home_profesion cascade-title" aria-label="SOFTWARE ENGINEER">
+          {"SOFTWARE ENGINEER".split("").map((ch, i) => (
+            <span
+              key={i}
+              className="cascade-letter"
+              style={{ animationDelay: `${i * 0.05}s` }}
+            >
+              {ch === " " ? "\u00A0" : ch}
+            </span>
+          ))}
+        </h2>
         <p className='home_texto_presentacion'>I build modern and responsive web applications focused on user experience, using React and backend technologies like Java and Spring Boot, with special attention to design, usability, and scalability in every project.</p>
         <div className='Button_home_about'>
           <Button 
               text="MORE ABOUT ME"
               onClick={() => setOpenAbout(true)}
+              className="attention"
           />
         </div>
       </div>

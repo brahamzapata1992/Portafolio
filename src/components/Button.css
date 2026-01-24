@@ -18,3 +18,16 @@
 .dark-mode .download-button{
     color: white;
 }
+@keyframes attentionShake {
+  0% { transform: translateX(0); }
+  2% { transform: translateX(-2px); }
+  4% { transform: translateX(2px); }
+  6% { transform: translateX(-2px); }
+  8% { transform: translateX(2px); }
+  10% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.download-button.attention {
+  animation: attentionShake 3s ease-in-out infinite;
+}

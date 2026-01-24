@@ -61,6 +61,24 @@
   .Button_home_about{
     margin-top: 15%;
   }
+  .cascade-title {
+  display: inline-block;
+}
+
+.cascade-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-14px);
+  animation: cascadeIn 3s ease forwards;
+}
+
+@keyframes cascadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   
   
   @media (min-width: 768px) {
