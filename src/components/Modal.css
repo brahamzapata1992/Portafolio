@@ -1,0 +1,92 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* espacio para que no pegue a bordes en mobile */
+  padding: 14px;
+
+  /* por si el contenido es alto, permite scroll del backdrop */
+  overflow-y: auto;
+}
+
+/* Tarjeta del modal */
+.modal-card {
+  width: 100%;
+  max-width: 520px;
+
+  /* responsive height */
+  max-height: min(85vh, 720px);
+  overflow: hidden;
+
+  border-radius: 16px;
+  background: #111;
+
+  border: 1px solid rgba(253, 163, 16, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Header fijo arriba dentro del modal */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 14px 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Botón cerrar */
+.modal-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 22px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  background: rgba(253, 163, 16, 0.25);
+}
+
+/* Body scrolleable */
+.modal-body {
+  padding: 14px;
+  overflow: auto; /* ✅ scroll interno */
+  max-height: calc(min(85vh, 720px) - 60px);
+  color: #fff;
+}
+
+/* Mejor en pantallas grandes */
+@media (min-width: 768px) {
+  .modal-backdrop {
+    padding: 24px;
+  }
+
+  .modal-card {
+    border-radius: 18px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+}
