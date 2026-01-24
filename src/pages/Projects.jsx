@@ -8,6 +8,8 @@ import musicFront from "../assets/projects/music-front.png";
 import musicBack from "../assets/projects/music-back.png";
 import dentalFront from "../assets/projects/consultorio_front.png";
 import dentalBack from "../assets/projects/consultorio_back.png";
+import portfolioFront from "../assets/projects/portafolio_front.png";
+import portfolioBack from "../assets/projects/portafolio_back.png";
 
 const Projects = () => {
   const { darkMode } = useTheme();
@@ -36,6 +38,18 @@ const Projects = () => {
       tech: ["React", "Java", "SQL"],
       frontImage: musicFront,
       backImage: musicBack,
+    },
+    {
+      id: 3,
+      title: "Portafolio Website",
+      badge: "FrontEnd",
+      github: "https://github.com/brahamzapata1992/Portafolio",
+      live: "https://portafolio-ashy-gamma.vercel.app/",
+      description:
+        "Personal portfolio website showcasing my projects, technical skills, and professional profile as a Software Engineer, with a modern, responsive, and user-focused design.",
+      tech: ["React"],
+      frontImage: portfolioFront,
+      backImage: portfolioBack,
     },
   ];
 
