@@ -18,8 +18,8 @@ const Home = () => {
       </div>
       <div>
         <h1 className='home_nombre'>I'M BRAHAM ZAPATA</h1>
-        <h2 className='home_profesion'>WEB DESIGNER</h2>
-        <p className='home_texto_presentacion'>I am a developer passionate about creating intuitive web applications that enhance the user experience. I focus on learning and growing professionally, collaborating on projects that make life easier and more productive.</p>
+        <h2 className='home_profesion'>SOFTWARE ENGINEER</h2>
+        <p className='home_texto_presentacion'>I build modern and responsive web applications focused on user experience, using React and backend technologies like Java and Spring Boot, with special attention to design, usability, and scalability in every project.</p>
         <div className='Button_home_about'>
           <Button 
               text="MORE ABOUT ME"
@@ -27,8 +27,13 @@ const Home = () => {
           />
         </div>
       </div>
-        <Modal open={openAbout} onClose={() => setOpenAbout(false)} title="">
-          <About />
+        <Modal
+          open={openAbout}
+          onClose={() => setOpenAbout(false)}
+          title="About Me"
+          className={darkMode ? "modal-dark" : "modal-light"}
+        >
+          <About variant="modal" />
         </Modal>     
     </div>
   );

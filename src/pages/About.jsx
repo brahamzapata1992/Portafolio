@@ -6,7 +6,7 @@ import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 import './About.css'
 
-const About = () => {
+const About = ({ variant = "page" }) => {
 
   const { darkMode } = useTheme(); 
 
@@ -22,9 +22,11 @@ const About = () => {
       <div>
         <h2 className='text_about_title_personal'>PERSONAL INFO</h2>
       </div>
+      {variant !== "modal" && (
       <div className='contener_foto_perfil_about'>
         <img src={perfil} alt="Tu Nombre" className="profile-photo_about" />
       </div>
+      )}
       <div className="personal-info">
         <div className="info-item"><strong className='item_about'>First Name:</strong> <span>Braham</span></div>
         <div className="info-item"><strong className='item_about'>Last Name:</strong> <span>Zapata</span></div>
