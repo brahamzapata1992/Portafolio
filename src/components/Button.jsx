@@ -1,15 +1,12 @@
 import React from 'react';
-import { useTheme } from '../context/ThemeContext';
 import './Button.css';
 
-const Button = ({ text }) => { 
-    const { darkMode } = useTheme(); 
-
-    return (
-        <button className="download-button">
-            {text} 
-        </button>
-    );
+const Button = ({ text, onClick, type = "button" }) => {
+  return (
+    <button className="download-button" onClick={onClick} type={type}>
+      {text}
+    </button>
+  );
 };
 
 export default Button;

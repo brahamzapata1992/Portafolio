@@ -41,7 +41,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Portafolio Website",
+      title: "Developer Portfolio",
       badge: "FrontEnd",
       github: "https://github.com/brahamzapata1992/Portafolio",
       live: "https://portafolio-ashy-gamma.vercel.app/",

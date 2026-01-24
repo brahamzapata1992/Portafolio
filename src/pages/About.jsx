@@ -10,6 +10,10 @@ const About = () => {
 
   const { darkMode } = useTheme(); 
 
+  const handleDownloadCV = () => {
+    window.open("https://rxresu.me/brahamzapata1992/resume", "_blank");
+  };
+
   return (
     <div className='principal_contenedor_all'>
       <div className='contenedor_about_principal_text'>
@@ -34,7 +38,10 @@ const About = () => {
         <div className="info-item"><strong className='item_about'>Languages:</strong> <span>Spanish, English</span></div>
       </div>
       <div className="button_about">
-      <Button text="DOWNLOAD CV"   />
+      <Button 
+        text="DOWNLOAD CV"
+        onClick={handleDownloadCV}
+      />
       </div>
       <div>
         <h2 className='skills_about_text'>MY SKILLS</h2>
