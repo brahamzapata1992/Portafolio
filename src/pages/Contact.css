@@ -1,0 +1,254 @@
+
+
+/* 🔒 Evita scroll horizontal */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Page */
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 18px 12px 90px; 
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Header */
+.contact-hero {
+  width: 100%;
+  position: relative;
+  margin: 8px 0 14px;
+}
+
+.contact-watermark {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  opacity: 0.08;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.contact-title {
+  font-size: 42px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact-title span {
+  color: #fda310;
+}
+
+/* Panel full width */
+.contact-panel {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 18px 16px;
+  border-radius: 22px;
+
+  background: rgba(20, 20, 20, 0.55);
+  border: 1px solid rgba(253, 163, 16, 0.22);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Texts */
+.contact-subtitle {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.contact-desc {
+  margin: 0 0 18px 0;
+  opacity: 0.85;
+  line-height: 1.55;
+  font-size: 15px;
+}
+
+/* Info */
+.contact-info {
+  margin-bottom: 18px;
+}
+
+.contact-info-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+/* 🔥 ICONOS GRANDES Y VISIBLES */
+.contact-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #fda310;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.contact-info-label {
+  font-size: 12px;
+  opacity: 0.75;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+}
+
+.contact-info-value {
+  font-size: 16px;
+  font-weight: 800;
+  word-break: break-word;
+}
+
+/* Social icons */
+.contact-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.social-btn:active {
+  transform: scale(0.95);
+}
+
+.social-btn:hover {
+  background: rgba(253, 163, 16, 0.35);
+}
+
+/* Form */
+.contact-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/* Inputs */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-size: 14px;
+
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+}
+
+.contact-input {
+  height: 52px;
+}
+
+.contact-textarea {
+  border-radius: 22px;
+  resize: none;
+  min-height: 160px;
+  overflow: hidden;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  opacity: 0.65;
+  letter-spacing: 0.3px;
+}
+
+/* Button */
+.contact-submit {
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  background: #fda310;
+  color: #111;
+  margin-top: 6px;
+}
+
+/* Themes */
+.contact-page.dark {
+  background: #000;
+  color: #fff;
+}
+
+.contact-page.light {
+  background: #fff;
+  color: #111;
+}
+
+/* Light mode fixes */
+.contact-page.light .contact-panel {
+  background: rgba(245, 245, 245, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.contact-page.light .contact-input,
+.contact-page.light .contact-textarea {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.contact-page.light .social-btn {
+  color: #111;
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================
+   Desktop (temporal)
+   ========================== */
+@media (min-width: 768px) {
+  .contact-page {
+    padding: 24px;
+  }
+
+  .contact-panel {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}

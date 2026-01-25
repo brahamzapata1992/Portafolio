@@ -3,36 +3,46 @@
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  position: fixed; 
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px; 
-  z-index: 1000; 
+  height: 60px;           /* 🔥 más real para botones */
+  z-index: 1000;
 }
 
 .nav-icons {
   display: flex;
   justify-content: space-around;
+  align-items: center;     /* 🔥 centra vertical */
+  height: 100%;            /* 🔥 usa todo el alto del footer */
 }
 
 .nav-icons a {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
-  padding: 10px;
-  width: 20px;
-  height: 20px;
+
+  width: 44px;             /* ✅ tamaño real del círculo */
+  height: 44px;            /* ✅ tamaño real del círculo */
   border-radius: 50%;
   background-color: #555;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: background-color 0.4s ease;
 }
 
+.nav-icons a svg {
+  width: 22px;             /* ✅ asegura que el icono se vea */
+  height: 22px;
+}
+
 .nav-icons a.active {
-  background-color: #FDA310; 
+  background-color: #FDA310;
+  color: #111;             /* opcional: se ve más duro */
 }
 
 .nav-icons a:hover {
