@@ -23,7 +23,7 @@ const Projects = () => {
       live: "https://clinicaodontologicabackend-production.up.railway.app/",
       description:
         "A dental clinic management system with patient records and appointment scheduling.",
-      tech: ["Java", "SQL", "Spring Boot"],
+      tech: ["Java", "SQL"],
       frontImage: dentalFront, 
       backImage: dentalBack,   
     },
@@ -46,7 +46,7 @@ const Projects = () => {
       github: "https://github.com/brahamzapata1992/Portafolio",
       live: "https://portafolio-ashy-gamma.vercel.app/",
       description:
-        "Personal portfolio website showcasing my projects, technical skills, and professional profile as a Software Engineer, with a modern, responsive, and user-focused design.",
+        "Personal portfolio showcasing my projects and skills as a Software Engineer.",
       tech: ["React"],
       frontImage: portfolioFront,
       backImage: portfolioBack,

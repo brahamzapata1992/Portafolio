@@ -58,7 +58,7 @@ const Contact = () => {
               <FaEnvelope />
             </div>
             <div>
-              <div className="contact-info-label">MAIL ME</div>
+              <div className="contact-info-label">EMAIL ME</div>
               <div className="contact-info-value">brahamzapata1992@gmail.com</div>
             </div>
           </div>
