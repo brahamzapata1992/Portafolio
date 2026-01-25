@@ -24,9 +24,11 @@ body {
 
 /* Header */
 .contact-hero {
+  
   width: 100%;
   position: relative;
   margin: 8px 0 14px;
+  margin-top: 45px;
 }
 
 .contact-watermark {

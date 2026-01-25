@@ -3,9 +3,8 @@ import {
   FaEnvelope,
   FaPhoneAlt,
   FaFacebookF,
-  FaTwitter,
-  FaYoutube,
-  FaBehance,
+  FaInstagram,
+  FaYoutube,  
 } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 import "./Contact.css";
@@ -76,18 +75,15 @@ const Contact = () => {
 
           <div className="contact-social">
             {/* Cambia los href cuando tengas links reales */}
-            <a className="social-btn" href="#" aria-label="Facebook">
+            <a className="social-btn" href="https://www.facebook.com/braham.zapata" aria-label="Facebook">
               <FaFacebookF />
             </a>
-            <a className="social-btn" href="#" aria-label="Twitter">
-              <FaTwitter />
+            <a className="social-btn" href="https://www.instagram.com/brahamzapata/" aria-label="Insagram">
+              <FaInstagram />
             </a>
-            <a className="social-btn" href="#" aria-label="YouTube">
+            <a className="social-btn" href="https://www.youtube.com/@brahamzapata9844" aria-label="YouTube">
               <FaYoutube />
-            </a>
-            <a className="social-btn" href="#" aria-label="Behance">
-              <FaBehance />
-            </a>
+            </a>            
           </div>
         </div>
 
